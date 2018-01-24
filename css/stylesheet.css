@@ -1,0 +1,282 @@
+/********FONTS************/
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+/********CSS RESET********/
+*,
+*:before,
+*:after{
+margin:0;
+padding:0;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+}
+
+
+/*********CSS*************/
+
+body{
+    margin:0 auto;
+    max-width:960px;
+    font-family: "Amatic SC", cursive;
+    background:url("../images/back.png");
+    background-repeat:repeat-x;
+    background-attachment:fixed;
+    background-position:center;
+
+
+    color:rgb(0,0,0);
+    text-align:center;
+
+    
+}
+
+.logo{
+  margin-top:10%;
+  width:50%;
+  
+
+}
+
+h1{
+    background:rgb(144, 158, 86);
+    border-radius:14px;
+    text-align:center;
+    font-size:2em;
+    margin:0 auto;
+    max-width:960px;
+
+
+}
+
+
+h2{
+  color:white;
+    background:rgb(143, 158, 86);
+    margin-top:5%;
+    margin-bottom:2%;
+    border-radius:10px;
+    
+
+}
+
+input[type=text]{
+    
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #72205e;
+  outline: none;
+  font-size:1.8em;
+  text-align:center;
+  color:#f8963a;
+  font-family:"Amatic SC",cursive;
+
+}
+input[type=radio]{
+    visibility:hidden;
+    width:5%;
+    opacity:.5;
+    vertical-align:bottom;
+    margin-left:5px;
+    margin-right:5px;    
+}
+
+
+
+input[type=radio]:checked + label {
+  background:white;
+  color:#72205e;
+  box-shadow: 0px 0px 15px #9a00b7;
+}
+
+input[type=submit]{
+    border-radius:10px;
+    box-shadow: 0px 0px 15px white;
+    background:rgb(114, 31, 93);
+    border:5px white;
+    color:white;
+    width:50%;
+    height:10%;
+
+
+}
+input[type=radio]:checked+ label:after{
+  background:white;
+}
+label>input{
+    visibility:hidden;
+    position:absolute;
+    
+}
+label>input+img{
+    cursor:pointer;
+    border:2px solid transparent;
+    
+}
+label>input:checked+img{
+    box-shadow: 0px 0px 30px #00d8ff;
+    
+}
+
+label{
+    
+    text-align:left;
+    justify-content:center;
+
+    
+
+}
+
+label:hover{
+  color: rgb(16, 155, 198);
+  
+
+}
+
+.fish{
+    border-radius:15px;
+}
+
+input[type=submit]{
+    margin-top:5%;
+    font-size:1.5em;
+    font-family:"Amatic SC", cursive;
+
+}
+
+.name{
+    border-radius:5px;
+    background:rgb(255, 255, 255);
+    margin-top:30px;
+    font-size:1.6em;
+    color:rgb(114, 32, 94);
+}
+#nametag{
+    font-size: 2em;
+}
+
+.choice{
+    justify-content:center;
+    display:flex;
+    margin-top:5%;
+    padding:0;
+    border-radius:10px;
+}
+
+
+.coffee{
+ margin:0 auto;
+ border-radius:10px;
+
+
+
+}
+.tea{
+   margin:0 auto;
+    border-radius:10px;
+   
+}
+
+.sizes{
+    vertical-align:middle;
+    justify-content:center;
+    background:rgb(243, 207, 74);
+    box-shadow: 0px 0px 15px black;
+    height:10%;
+    width:50%;
+    margin:0 auto;
+    border-radius:10px;
+
+    
+    
+}
+
+.cream{
+    background:rgb(243, 206, 76);
+    box-shadow: 0px 0px 15px black;
+    height:10%;
+    width:50%;
+    margin:0 auto;
+    border-radius:10px;
+
+
+    
+}
+.button{
+  width:20%;
+  border-radius:50%;
+}
+.sugar{
+
+    background:rgb(243, 207, 74);
+    box-shadow: 0px 0px 15px black;
+    height:10%;
+    width:50%;
+    margin:0 auto;
+    border-radius:10px;
+    
+    
+}
+
+.submit{
+    
+    
+}
+
+@media (max-width:600px){
+  .logo{
+    width:30%;
+  }
+  h1{
+    font-size:1.5em;
+    margin-bottom:0;
+    padding:0;
+  }
+  .name{
+    padding-left:0;
+    margin-top:0;
+    font-size:1em;
+    margin-bottom:1%;
+    padding:0;
+  }
+  input[type=text]{
+    margin-top:0;
+    margin-bottom:0;
+    padding:0;
+    background:rgba(0,0,0,0);
+  }
+  .body{
+    
+  }
+  .choices{
+    margin-top:1%;
+  }
+  .sizes{
+    margin-top:1%;
+    height:14%;
+  }
+  .cream{
+    height:12%;
+  }
+  .sugar{
+    height:12%;
+    padding:0;
+  }
+  input[type=submit]{
+    margin-top:10px;
+  }
+  label{
+    font-size:1em;
+  
+  }
+  input[type=radio]{
+    font-size:.8em
+  }
+
+}
+@media (min-width:600){
+    .button{
+        width:15%;
+    }
+}
